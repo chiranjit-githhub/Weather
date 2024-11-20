@@ -3,7 +3,7 @@ const cityInput = document.getElementById("city-input");
 const newsContainer = document.getElementById("news-container");
 
 // Default city (can be set to any initial city)
-let currentCity = "London";
+let currentCity = "New Delhi";
 const apiKey = "3f811c5a43e14d6fbe8887c783b858b1"; // Replace with your News API key
 
 // Fetch and display the news for the initial or searched city
