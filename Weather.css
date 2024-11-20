@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #0066cc, #003366); /* Blue background gradient */
+    color: #08a52f; /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the app */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(34, 30, 30, 0.2);
+    overflow: hidden;
+}
+
+header {
+    background: #7db4ec;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background: #00264d;
+}
+
+.weather-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-info img.weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.forecast-card {
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 18%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card img.forecast-icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+}
+
+/* AQI styles */
+.aqi-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aqi-info #aqi-meter {
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .search-container input {
+        width: 60%;
+    }
+
+    .forecast-card {
+        width: 45%;
+    }
+
+    .forecast {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Loading Spinner */
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
