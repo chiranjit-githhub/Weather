@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://img.freepik.com/premium-photo/futuristic-cityscape-with-glowing-lines-connecting-buildings-night_1019380-1648.jpg?w=826') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #004080, #00264d);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+form .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #004080;
+}
+
+p {
+    margin-top: 10px;
+}

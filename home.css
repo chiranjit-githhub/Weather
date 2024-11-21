@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('https://media.istockphoto.com/id/1250380933/photo/top-down-aerial-view-of-chicago-downtown-urban-grid-with-park.jpg?s=612x612&w=0&k=20&c=ojXCwviHjJCOgvWU-JUM0_AC6hsaI9UfzzhzvDLJkIU=') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+}
+
+/* Header styling */
+header {
+    background: rgba(0, 64, 128, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+}
+
+/* Navigation bar styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background: rgba(0, 51, 102, 0.9); /* Semi-transparent navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1); /* Subtle hoverable effect */
+}
+
+nav ul li a:hover {
+    background: #00509e; /* Hover color */
+    color: #ffffff;
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow for better contrast */
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Buttons */
+main a {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #00509e;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+main a:hover {
+    background: #004080; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+/* Footer styling */
+footer {
+    background: rgba(0, 64, 128, 0.8); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    main a {
+        font-size: 14px;
+    }
+}
