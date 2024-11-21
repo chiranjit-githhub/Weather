@@ -136,3 +136,4 @@ function getWindDirection(degree) {
     return directions[Math.round(degree / 22.5) % 16];
 }
 
+
